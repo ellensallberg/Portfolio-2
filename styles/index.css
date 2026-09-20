@@ -1,0 +1,60 @@
+
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: #0f0f13;
+    color: white;
+    font-family: "DM Serif Display", serif;
+}
+
+a {
+    color: #7a7885;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+/* HEADER START */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoIcon {
+    margin-right: 0.5rem;
+}
+
+.icon-sm {
+    font-size: 0.5rem;
+}
+
+.purpleTxt {
+    color: #9D64CD;
+}
+
+.header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    color: #7a7885;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navItem {
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+/* HEADER END */
