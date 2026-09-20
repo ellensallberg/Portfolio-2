@@ -9,6 +9,7 @@ body {
     background-color: #0f0f13;
     color: white;
     font-family: "DM Serif Display", serif;
+    margin: 0 3rem 0;
 }
 
 a {
@@ -21,6 +22,16 @@ a:hover {
 }
 
 /* HEADER START */
+
+.header {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    color: #7a7885;
+}
 
 .logo {
     display: flex;
@@ -39,14 +50,7 @@ a:hover {
     color: #9D64CD;
 }
 
-.header {
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "JetBrains Mono", monospace;
-    color: #7a7885;
-}
+
 
 .navbar {
     display: flex;
