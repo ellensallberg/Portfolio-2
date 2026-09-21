@@ -9,7 +9,9 @@ body {
     background-color: #0f0f13;
     color: white;
     font-family: "DM Serif Display", serif;
-    margin: 0 3rem 0;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
 }
 
 a {
@@ -21,16 +23,117 @@ a:hover {
     color: white;
 }
 
+button {
+    padding: 0.8rem 1.5rem 0.8rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: white;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    padding-bottom: 6rem;
+    border-bottom: 1px solid #323136;
+}
+
+main {
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    justify-self: center;
+}
+
+h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-weight: 100;
+    font-style: italic;
+}
+
+h4 {
+    font-family: "JetBrains Mono", monospace;
+    color: #7a7885;
+}
+
+p {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.nummer {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1rem;
+    font-style: normal;
+    color: #9D64CD;
+}
+
+.icon-sm {
+    font-size: 0.5rem;
+}
+
+.purpleTxt {
+    color: #9D64CD;
+}
+
+.greyTxt {
+    color: #7a7885;
+}
+
+.allCaps {
+    text-transform: uppercase;
+}
+
+.secondaryFont {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.primaryBtn {
+    background-color: #9D64CD;
+    border: 1px solid #9D64CD;
+    
+}
+.primaryBtn:hover {
+    background-color: #744699;
+    border: 1px solid #744699;
+    
+}
+
+.secondaryBtn {
+    background-color: transparent;
+    border: 1px solid #7a7885;
+    
+}
+.secondaryBtn:hover {
+    background-color: transparent;
+    border: 1px solid #9D64CD;
+    color: #9D64CD;
+    
+}
+
+
+
 /* HEADER START */
 
 .header {
-    padding: 1rem;
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0 0.05);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #323136;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     font-family: "JetBrains Mono", monospace;
     color: #7a7885;
+    padding: 1rem 2rem 1rem;
 }
 
 .logo {
@@ -42,16 +145,6 @@ a:hover {
     margin-right: 0.5rem;
 }
 
-.icon-sm {
-    font-size: 0.5rem;
-}
-
-.purpleTxt {
-    color: #9D64CD;
-}
-
-
-
 .navbar {
     display: flex;
 }
@@ -61,4 +154,187 @@ a:hover {
     text-transform: uppercase;
 }
 
+
+
 /* HEADER END */
+
+/* HERO START */
+
+.hero {
+    margin-top: 15rem;
+}
+
+.title {
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 100;
+    font-style: italic;
+    margin: 1rem 0 1rem;
+}
+
+.blinking {
+    margin-left: 0.2rem;
+    animation: blink-animation 1.25s steps(1, start) infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        visibility: hidden;
+    }
+}
+
+.heroSkills {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.heroList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.heroTxt {
+    margin: 3rem 0 3rem;
+    max-width: 35rem;
+    font-style: italic;
+    font-size: 1.7rem;
+}
+
+.heroBtns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* HERO END */
+
+/* OM MIG START */
+
+.omMig {
+    margin-top: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.omMigImg {
+    max-width: 30rem;
+}
+
+.omMigTxt {
+    max-width: 36rem;
+}
+
+.imgContainer {
+    position: relative;
+}
+
+.imgDecor {
+    background-color: #9D64CD;
+    width: 9rem;
+    padding: 0.7rem;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 26rem;
+}
+
+/* OM MIG END */
+
+/* KOMPETENSER START */
+
+.kompetenser {
+    margin-top: 15rem;
+}
+
+.kompetenserContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.kompetenserCard {
+    flex: 1;
+}
+
+.kompetenserList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.kompetenserListItem {
+    border: #7a7885 solid 1px;
+    padding: 0.4rem 1rem 0.4rem;
+    color: #7a7885;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+}
+
+.kompetenserListItem:hover {
+    border: #9D64CD solid 1px;
+    color: white;
+    background-color: #9D64CD;
+}
+
+/* KOMPETENSER END */
+
+/* KONTAKT START */
+
+.kontaktList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.kontaktListItem {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #323136;
+    color: #7a7885;
+}
+
+.kontaktLeft {
+    text-transform: uppercase;
+}
+
+.kontaktCenter {
+    color: white;
+}
+
+.kontaktCenter:hover {
+    color: #9D64CD;
+}
+
+/* KONTAKT END */
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .omMigImg {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    
+    .omMig {
+        flex-direction: column;
+    }
+
+    .omMigTxt {
+        max-width: 100%;
+    }
+}
+
