@@ -38,11 +38,11 @@ section {
     border-bottom: 1px solid #323136;
     min-height: 100vh;
     align-items: center;
+    align-content: center;
 }
 
 main {
     max-width: 75rem;
-    width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
     justify-self: center;
@@ -123,14 +123,14 @@ nav {
 /* HEADER START */
 
 .header {
-    position: sticky;
+    position: sticky; 
     top: 0;
     background: rgba(0,0,0 0.05);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid #323136;
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
-    justify-content: space-between;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     font-family: "JetBrains Mono", monospace;
     color: #7a7885;
@@ -311,12 +311,12 @@ nav {
         line-height: 5rem;
     }
 }
-
+/* 
 @media (max-width: 560px) {
     .omMigImg {
         max-width: 100%;
     }
-}
+} */
 
  .omMigTxt {
         max-width: 100%;
