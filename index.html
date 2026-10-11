@@ -15,70 +15,89 @@
 
 <!-- HEADER -->
 
-    <header class="header">
-        <p class="logo"><span class="purpleTxt icon-sm logoIcon"><i class="fa-solid fa-arrow-right"></i></span> Ellen Sällberg</p>
+    <header class="header" id="header">
+        <span class="logo"><a href="#hero"> <span class="purpleTxt icon-sm logoIcon"><i class="fa-solid fa-arrow-right"></i></span>Ellen Sällberg</a></span>
         <nav>
             <ul class="navbar">
-                <li class="navItem"><a href="">Projekt</a></li>
-                <li class="navItem"><a href="">Om mig</a></li>
-                <li class="navItem"><a href="">Kompetenser</a></li>
-                <li class="navItem"><a href="">Kontakt</a></li>
+                <li class="navItem"><a href="#projekt">Projekt</a></li>
+                <li class="navItem"><a href="#omMig">Om mig</a></li>
+                <li class="navItem"><a href="#kompetenser">Kompetenser</a></li>
+                <li class="navItem"><a href="#kontakt">Kontakt</a></li>
             </ul> 
         </nav>
+        <a id="sidenavOpen"><i class="fa-solid fa-bars"></i></a>
     </header>
-    
-<!-- HERO -->
+        
+<!-- SIDENAV -->
 
+    <aside>
+        <nav id="sidenav">
+            <a id="sidenavClose"><i class="fa-solid fa-xmark"></i></a>
+            <ul>
+                <li class="navItem"><a href="#projekt">Projekt</a></li>
+                <li class="navItem"><a href="#omMig">Om mig</a></li>
+                <li class="navItem"><a href="#kompetenser">Kompetenser</a></li>
+                <li class="navItem"><a href="#kontakt">Kontakt</a></li>
+            </ul> 
+        </nav>
+    </aside>
+
+<!-- HERO -->
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <p class="purpleTxt allCaps secondaryFont">[ 00 ] - Portfolio</p>
-            <h2 class="title">Ellen<br><span class="purpleTxt">Sällberg<span class="blinking">_</span></span></h2>
+            <h1 class="title">Ellen<br><span class="purpleTxt">Sällberg<span class="blinking">_</span></span></h1>
 
             <div class="heroSkills secondaryFont">
                 <p class="greyTxt">[ 01 ]</p>
                 <ul class="heroList">
                     <li>UX Engineer</li>
-                    <li>Din Mamma</li>
-                    <li>Lorem Ipsum?</li>
+                    <li>Designer</li>
+                    <li>Programmerare</li>
                 </ul>
             </div>
 
-            <p class="heroTxt greyTxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione modi ex, similique quam consequuntur veritatis.</p>
+            <p class="heroTxt greyTxt">Jag kombinerar design och teknik för att skapa användarvänliga och genomtänkta digitala upplevelser som fungerar för alla.</p>
             
             <div class="heroBtns">
-                <button class="primaryBtn projektBtn">Projekt <i class="fa-solid fa-arrow-down"></i></button>
-                <button class="secondaryBtn">Kontakta mig</button>
+                <a href="#projekt"><button class="primaryBtn projektBtn">Projekt <i class="fa-solid fa-arrow-down"></i></button></a>
+                <a href="#kontakt"><button class="secondaryBtn">Kontakta mig</button></a>
             </div>
 
         </section>
 
+ <!-- PROJEKT -->
+
+        <section class="projekt" id="projekt">
+            <h2 class="projektTitle"><span class="nummer">[02]</span> Projekt kommer snart</h2>
+            <img class="loadingImg" src="images/loading-img.png" alt="Loading"><img>
+        </section>
 
 <!-- OM MIG -->
 
-        <section class="omMig">
+        <section class="omMig" id="omMig">
             <div class="imgContainer">
                 <img class="omMigImg" src="images/Image-4.jpeg" alt="söt katt">
                 <p class="imgDecor"><i class="fa-solid fa-location-dot"></i>Stockholm</p>
             </div>
                 
             <div class="omMigTxt">
-                <h3 class="omMigTitle"><span class="nummer">[03]</span> Om Mig</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, atque repellat. Accusamus amet, cupiditate porro facilis vel quisquam! Porro, corrupti reiciendis exercitationem magnam autem molestiae officiis laborum tempora ducimus unde.</p>
-                <p class="greyTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas nisi cum maiores id, laborum commodi sed explicabo natus dolores cumque. Quisquam aperiam autem adipisci minima? In pariatur rem architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, necessitatibus dolorum rem fuga beatae consequatur dolore perferendis? Facere nemo quam obcaecati enim quae? Vel, iusto quaerat? Odit molestias mollitia sed!</p>
-                <p class="greyTxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, officia. Exercitationem sequi unde nemo veritatis molestiae sed, neque sit est.</p>
+                <h2 class="omMigTitle"><span class="nummer">[03]</span> Om Mig</h2>
+                <p>Jag heter Ellen, är 22 år och pluggar till UX Engineer på Chas Academy i Stockholm. Jag är en teknik- och designnörd från Västerås med ett stort intresse för datorer, gitarrer, spel och katter.</p>
+                <p class="greyTxt">Mitt intresse för programmering började med en uppsats om webbtillgänglighet och WCAG, där jag undersökte hur tillgängliga VGR:s folkhögskolors webbplatser var. Det ena ledde till det andra, och snart gick jag en fem månader lång bootcamp i frontendutveckling.</p>
+                <p class="greyTxt">På bilden bredvid ser du Sockan, katten jag växte upp med. Jag är ganska säker på att hon minns mig, men efter att jag flyttade till Göteborg verkar hon ha bestämt sig för att ignorera mig. Vissa svek sitter tydligen djupare än andra.</p>
             </div>
 
         </section>
 
-<!-- PROJEKT -->
 <!-- KOMPETENSER -->
 
-        <section class="kompetenser">
-            <h3 class="kompetenserTitle"><span class="nummer">[04]</span> Kompetenser</h3>
+        <section class="kompetenser" id="kompetenser">
+            <h2 class="kompetenserTitle"><span class="nummer">[04]</span> Kompetenser</h2>
 
             <div class="kompetenserContainer">
                 <div class="kompetenserCard">
-                    <h4>Design</h4>
+                    <h3>Design</h3>
                     <ul class="kompetenserList">
                         <li class="kompetenserListItem">Figma</li>
                         <li class="kompetenserListItem">FigJam</li>
@@ -88,7 +107,7 @@
                 </div>
 
                 <div class="kompetenserCard">
-                    <h4>Engineering</h4>
+                    <h3>Engineering</h3>
                     <ul class="kompetenserList">
                         <li class="kompetenserListItem">React</li>
                         <li class="kompetenserListItem">HTML</li>
@@ -99,7 +118,7 @@
                 </div>
 
                 <div class="kompetenserCard">
-                    <h4>Utveckling</h4>
+                    <h3>Utveckling</h3>
                     <ul class="kompetenserList">
                         <li class="kompetenserListItem">Agilt arbetssätt</li>
                         <li class="kompetenserListItem">Tillgänglighet (WCAG)</li>
@@ -113,28 +132,28 @@
 
 <!-- KONTAKT -->
 
-        <section class="kontakt">
+        <section class="kontakt" id="kontakt">
             <div>
-                <h3><span class="nummer">[05]</span>Vi bygger tillsammans!</h3>
-                <p class="greyTxt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae accusamus nemo, optio eligendi corporis repudiandae quos error, distinctio nesciunt temporibus</p>
+                <h2><span class="nummer">[05]</span>Vi bygger tillsammans!</h2>
+                <p class="greyTxt">Har du ett spännande projekt, en jobbmöjlighet eller bara en idé du vill bolla? Hör gärna av dig, jag är alltid öppen för nya samarbeten och roliga utmaningar!</p>
                 
                 <ul class="kontaktList">
                     <li class="kontaktListItem">
                         <p class="kontaktLeft">Email</p>
-                        <p class="kontaktCenter"><a class="kontaktCenter" href="#">ellen.sallberg1@gmail.com</a></p>
+                        <p class="kontaktCenter"><a class="kontaktCenter" href="mailto:ellen.sallberg1@gmail.com">ellen.sallberg1@gmail.com</a></p>
                         <p class="kontaktRight"><i class="fa-solid fa-arrow-right"></i></p>
                     </li>
 
                     <li class="kontaktListItem">
                         
                         <p class="kontaktLeft">Linkedin</p>
-                        <p class="kontaktCenter"><a class="kontaktCenter" href="https://www.linkedin.com/in/ellen-s%C3%A4llberg-73113227a/">Ellen Sällberg</a></p>
+                        <p class="kontaktCenter"><a class="kontaktCenter" href="https://www.linkedin.com/in/ellen-s%C3%A4llberg-73113227a/" target="_blank">Ellen Sällberg</a></p>
                         <p class="kontaktRight"><i class="fa-solid fa-arrow-right"></i></p>
                     </li>
 
                     <li class="kontaktListItem">
                         <p class="kontaktLeft">Github</p>
-                        <p class="kontaktCenter"><a class="kontaktCenter" href="https://github.com/ellensallberg">ellensallberg</a></p>
+                        <p class="kontaktCenter"><a class="kontaktCenter" href="https://github.com/ellensallberg" target="_blank">ellensallberg</a></p>
                         <p class="kontaktRight"><i class="fa-solid fa-arrow-right"></i></p>
                     </li>
                 </ul>
@@ -142,7 +161,7 @@
 
         </section>
 
-
     </main>
+
 </body>
 </html>
